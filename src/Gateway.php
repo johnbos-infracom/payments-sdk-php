@@ -30,7 +30,7 @@ class Gateway
      * @param Credentials $credentials
      * @param HttpClient|null $httpClient
      */
-    public function __construct(Credentials $credentials, HttpClient $httpClient = null)
+    public function __construct(Credentials $credentials, ?HttpClient $httpClient = null)
     {
         if (!$httpClient) {
             $httpClient = new HttpClient([

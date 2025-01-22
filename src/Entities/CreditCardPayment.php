@@ -28,7 +28,7 @@ class CreditCardPayment extends Payment
      * @param string $purchaseId
      * @param \DateTime $dueDate
      */
-    public function __construct(Money $money, array $issuers, $purchaseId, \DateTime $dueDate = null)
+    public function __construct(Money $money, array $issuers, $purchaseId, ?\DateTime $dueDate = null)
     {
         parent::__construct($money, 'Creditcard', $purchaseId);
 

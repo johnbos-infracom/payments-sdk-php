@@ -28,7 +28,7 @@ class Charge
      * @param Money $money
      * @param array|null $payments
      */
-    public function __construct(Money $money, array $payments = null)
+    public function __construct(Money $money, ?array $payments = null)
     {
         $this->money = $money;
         $this->payments = $payments ? $payments : [];
